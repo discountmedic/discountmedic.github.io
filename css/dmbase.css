@@ -8,4 +8,6 @@ body {
 
 .row{padding-bottom:10px;}
 
-.quotes{height:60px;}
+#quotes{height:60px;background-color:#d9e8f5;}
+.homeblue{background-color:#91bed4; font-weight:bold; font-size:16px;}
+.headerhome{text-align:'center';}
