@@ -1,4 +1,3 @@
-
 body {
   padding-top: 50px;
 }
@@ -6,3 +5,7 @@ body {
   padding: 10px 15px;
   text-align: center;
 }
+
+.row{padding-bottom:10px;}
+
+.quotes{height:60px;}
