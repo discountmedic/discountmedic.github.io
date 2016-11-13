@@ -23,89 +23,185 @@
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-            <a class="navbar-brand" href="#">Discount Medic</a>
+                <a class="navbar-brand" href="#">Discount Medic</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><button type="button" class="btn btn-danger navbar-btn">Log in</button></li>
+            </div>
+            </ul>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-
-                <li><a href="index.html">index</a></li>
-                <li><a href="results.html">results</a></li>
-                <li><a href="d1.html">d1</a></li>
-                <li><a href="d2.html">d2</a></li>
-                <li><a href="history.html">history</a></li>
+        <!--/.nav-collapse -->
         </div>
-        </ul>
-    </div>
-    <!--/.nav-collapse -->
-    </div>
-</nav>
+    </nav>
 
     <div class="container">
 
         <div class="basecontent">
 
-<h1>Results</h1>
-<div class="row">
-    <!-- /.col-lg-6 -->
-    <div class="col-lg-12">
-<!-- list -->
+            <!-- div class="row">
+                <div class="col-lg-12">
+                <h1>Results</h1>
+                <h4>@TODO: ADD SEARCH</h4>
+             
+                </div>
+            </div -->
+            
+             <div class="row">
+                    <div class="col-lg-2">
+                        <input class="form-control" placeholder="Zip Code">
+                   </div>
+                    <div class="col-lg-10">
+                        <div class="input-group">
+                        <input class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-success" type="button">Go!</button>
+                        </span>
+                        </div>
+                    </div>
 
-<ul class="list-group">
-  <li class="list-group-item">Cras justo odio</li>
-  <li class="list-group-item">Dapibus ac facilisis in</li>
-  <li class="list-group-item">Morbi leo risus</li>
-  <li class="list-group-item">Porta ac consectetur ac</li>
-  <li class="list-group-item">Vestibulum at eros</li>
-</ul>
+                </div>
 
 
-    </div>
-</div>
+            <!-- side panel -->
+            <div class="row">
+                <div class="col-lg-4">
 
-<div class="row">
-<div class="col-lg-12">
-  <nav aria-label="Page navigation">
-  <ul class="pagination">
-    <li>
-      <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-      </a>
-    </li>
-    <li><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li>
-      <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-  
-</div>
-<!-- /.row -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>Crestor</h4></div>
+
+
+                        <div class="panel-body">
+                            <img src="images/pills.jpg" class="img-responsive thumbnail" /><br/>
+                            <p>Statin It can treat high cholesterol and triglyceride levels. This may reduce the risk of heart attack, stroke, and related health conditions.</p>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                
+            
+                <!-- end search -->
+
+
+                <!-- side panel -->
+
+                <!-- /.col-lg-6 -->
+                <div class="col-lg-4">
+
+                    <table id="myTable" class="table">
+                        <thead class="thead-inverse">
+                            <tr>
+                                <th>From</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bodydata">
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="col-lg-4">
+                    <img src="images/map.jpg" class="img-responsive thumbnail" />
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li>
+                                <a href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <!-- /.row -->
+
+
+            </div>
+
+        <!-- footer -->
+
+        <hr>
+
+      <footer>
+        <p>© Discount Medic 2016</p>
+      </footer>
 
 
         </div>
+        <!-- /.container -->
 
-    </div>
-    <!-- /.container -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/tablesorter/jquery.tablesorter.js"></script>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+            $(function() {
+                // Handler for .ready() called.
+                $.getJSON("/data/results.json", function(result) {
+                    console.log(result.items);
+                    $.each(result.items, function(i, field) {
+                        console.log(field.k);
+                        //$("#resultlist").append('<li class="list-group-item">'+field.from+' | '+field.price+'</li>');
+
+                        if (i == 0) {
+                            $("#bodydata").append('<tr> <td class="text-left"> <button type="button" class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="In most cases this provides the greatest value."><span class="glyphicon glyphicon-star" aria-hidden="false"></span></button>&#160;<a href="https://www.crestor.com/savings-resources/savings-offers.html" target="_blank">' + field.from + '</a></td><td class="text-left"> ' + field.price + '</td></tr>');
+
+                        } else {
+
+                            $("#bodydata").append('<tr><td class="text-left">' + field.from + ' </td><td class="text-left"> ' + field.price + '</td></tr>');
+                        }
+
+                    });
+                });
+
+
+
+
+                //call tablesorter
+                //$("#myTable").tablesorter();
+            });
+        </script>
+
+
+
 </body>
 
 </html>

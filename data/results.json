@@ -1,0 +1,42 @@
+{
+  "items": [
+	{
+      "drugname": "Crestor",
+      "from": "Manufacturer Coupon",
+	  "price": "3.00"
+    },
+    {
+      "drugname": "Crestor",
+      "from": "RxPortal - (Giant)",
+	  "price": "17.73"
+    },{
+      "drugname": "Crestor",
+      "from": "GoodRx - (CVS)",
+	  "price": "20.21"
+    },{
+      "drugname": "Crestor",
+      "from": "Discount Drug Network",
+	  "price": "35.49"
+    },
+	{
+      "drugname": "Crestor",
+      "from": "Blink Health",
+	  "price": "27.30"
+    },
+	{
+      "drugname": "Crestor",
+      "from": "RxCut",
+	  "price": "38.50"
+    },
+	{
+      "drugname": "Crestor",
+      "from": "Family Wise",
+	  "price": "112.97"
+    },
+	{
+      "drugname": "Crestor",
+      "from": "Costco",
+	  "price": "39.11"
+    }
+  ]
+}
